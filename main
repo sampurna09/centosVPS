@@ -1,0 +1,43 @@
+***********************************************************
+cd 				**change dir(ex: cd var)
+cd ..   			**go one step back
+sudo su  			**root user permission
+ls				**show all files in dir
+rm filename 			**delete file
+rm -r dirname 			**delete dir
+mv /source/file /dest   	**move file
+df -h --total | grep total	**disk space used
+free -m 			**ram use
+mkdir				**make directry
+***********************************************************
+install PUTTY
+login from putty(ip address/port/ssh)
+***********************************************************
+sudo su
+**yum update
+yum install java-1.8*		**you can download any verion as per your wish
+**yum install wget
+yum install wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.71/bin/apache-tomcat-8.5.71.tar.gz  **you can download any verison
+tar -zvxf apache-tomcat-8..
+cd apache-tomcat-8..
+cd bin
+**ls -ltr				**check permission of files
+chmod +x startup.sh			**give permission of file
+chmod +x shutdown.sh
+./startup.sh    			**to start service
+./shutdown.sh  				**to stop service
+**ps -ef | grep tomcat   		**to see if tomcat is started or not
+**ss -ltn                		**to all service and ports
+**(cd ..) + (cd config) + (vi server.xml)         **to change port on which tomcat is running(note: after changing you must stop and start tomcat)
+**press i to insert and press esc and write :wq to write and quite after changing port of tomcat(note: port 8080 is not enabled in server by default on some port including port:80 in default enabled)
+*************************************************************
+install filezella
+transfer file to server
+*************************************************************
+yum install nginx
+systemctl start nginx.service
+systemctl status nginx
+systemctl enable nginx
+vim /etc/nginx/nginx.config
+
+
